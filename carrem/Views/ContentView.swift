@@ -11,17 +11,23 @@ struct ContentView: View {
     @StateObject private var model = ContentViewModel()
     
     var body: some View {
-        ZStack {
-            FrameView(image: model.frame)
-                .frame(width: 200, height: 200)
-                .cornerRadius(20.0)
-            
-            ErrorView(error: model.error)
-            
-            ControlView(
-                comicSelected: $model.comicFilter,
-                monoSelected: $model.monoFilter,
-                crystalSelected: $model.crystalFilter)
+        GeometryReader { geometry in
+            ZStack {
+                VStack {
+                    Text("Scanning...")
+                        .bold()
+                        .padding()
+                    FrameView(image: model.frame)
+                        .frame(width: geometry.size.width - 48.0,
+                               height: geometry.size.height * 0.7,
+                               alignment: .top)
+                        .cornerRadius(20.0)
+                        .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
+                    Spacer()
+                }
+
+                ErrorView(error: model.error)
+            }
         }
     }
 }
