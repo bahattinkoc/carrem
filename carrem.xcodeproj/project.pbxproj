@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		6B3E81F92BFC043F0002C970 /* carremApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E81F82BFC043F0002C970 /* carremApp.swift */; };
-		6B3E81FB2BFC043F0002C970 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E81FA2BFC043F0002C970 /* ContentView.swift */; };
 		6B3E81FF2BFC04410002C970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E81FE2BFC04410002C970 /* Assets.xcassets */; };
 		6B3E82022BFC04410002C970 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E82012BFC04410002C970 /* Preview Assets.xcassets */; };
+		6B3E820A2BFC06C10002C970 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E82092BFC06C10002C970 /* CameraError.swift */; };
+		6B3E820C2BFC06DA0002C970 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E820B2BFC06DA0002C970 /* CameraManager.swift */; };
+		6B3E820E2BFC06EB0002C970 /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E820D2BFC06EB0002C970 /* FrameManager.swift */; };
+		6B3E82112BFC07150002C970 /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E82102BFC07150002C970 /* CGImageExtension.swift */; };
+		6B3E82142BFC07310002C970 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E82132BFC07310002C970 /* ContentViewModel.swift */; };
+		6B3E82172BFC074E0002C970 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E82162BFC074E0002C970 /* ContentView.swift */; };
+		6B3E82192BFC076A0002C970 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E82182BFC076A0002C970 /* ControlView.swift */; };
+		6B3E821B2BFC07770002C970 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E821A2BFC07770002C970 /* ErrorView.swift */; };
+		6B3E821D2BFC07840002C970 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E821C2BFC07840002C970 /* FrameView.swift */; };
+		6B3E821F2BFC07950002C970 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E821E2BFC07950002C970 /* ToggleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6B3E81F52BFC043F0002C970 /* carrem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carrem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B3E81F82BFC043F0002C970 /* carremApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carremApp.swift; sourceTree = "<group>"; };
-		6B3E81FA2BFC043F0002C970 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B3E81FE2BFC04410002C970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B3E82012BFC04410002C970 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B3E82092BFC06C10002C970 /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		6B3E820B2BFC06DA0002C970 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		6B3E820D2BFC06EB0002C970 /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		6B3E82102BFC07150002C970 /* CGImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
+		6B3E82132BFC07310002C970 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		6B3E82162BFC074E0002C970 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6B3E82182BFC076A0002C970 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		6B3E821A2BFC07770002C970 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		6B3E821C2BFC07840002C970 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		6B3E821E2BFC07950002C970 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +69,13 @@
 		6B3E81F72BFC043F0002C970 /* carrem */ = {
 			isa = PBXGroup;
 			children = (
-				6B3E81F82BFC043F0002C970 /* carremApp.swift */,
-				6B3E81FA2BFC043F0002C970 /* ContentView.swift */,
 				6B3E81FE2BFC04410002C970 /* Assets.xcassets */,
+				6B3E82082BFC06AD0002C970 /* Camera */,
+				6B3E81F82BFC043F0002C970 /* carremApp.swift */,
+				6B3E820F2BFC07030002C970 /* Extensions */,
 				6B3E82002BFC04410002C970 /* Preview Content */,
+				6B3E82122BFC07250002C970 /* ViewModels */,
+				6B3E82152BFC07410002C970 /* Views */,
 			);
 			path = carrem;
 			sourceTree = "<group>";
@@ -65,6 +86,44 @@
 				6B3E82012BFC04410002C970 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6B3E82082BFC06AD0002C970 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				6B3E82092BFC06C10002C970 /* CameraError.swift */,
+				6B3E820B2BFC06DA0002C970 /* CameraManager.swift */,
+				6B3E820D2BFC06EB0002C970 /* FrameManager.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		6B3E820F2BFC07030002C970 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B3E82102BFC07150002C970 /* CGImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B3E82122BFC07250002C970 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6B3E82132BFC07310002C970 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6B3E82152BFC07410002C970 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B3E82162BFC074E0002C970 /* ContentView.swift */,
+				6B3E82182BFC076A0002C970 /* ControlView.swift */,
+				6B3E821A2BFC07770002C970 /* ErrorView.swift */,
+				6B3E821C2BFC07840002C970 /* FrameView.swift */,
+				6B3E821E2BFC07950002C970 /* ToggleButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B3E81FB2BFC043F0002C970 /* ContentView.swift in Sources */,
+				6B3E82192BFC076A0002C970 /* ControlView.swift in Sources */,
+				6B3E820E2BFC06EB0002C970 /* FrameManager.swift in Sources */,
+				6B3E82112BFC07150002C970 /* CGImageExtension.swift in Sources */,
+				6B3E82172BFC074E0002C970 /* ContentView.swift in Sources */,
+				6B3E82142BFC07310002C970 /* ContentViewModel.swift in Sources */,
 				6B3E81F92BFC043F0002C970 /* carremApp.swift in Sources */,
+				6B3E820C2BFC06DA0002C970 /* CameraManager.swift in Sources */,
+				6B3E821B2BFC07770002C970 /* ErrorView.swift in Sources */,
+				6B3E821F2BFC07950002C970 /* ToggleButton.swift in Sources */,
+				6B3E821D2BFC07840002C970 /* FrameView.swift in Sources */,
+				6B3E820A2BFC06C10002C970 /* CameraError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

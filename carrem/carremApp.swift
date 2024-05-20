@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-import SwiftData
 
 @main
-struct carremApp: App {
+struct AppMain: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
