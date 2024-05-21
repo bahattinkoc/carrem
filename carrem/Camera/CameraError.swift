@@ -15,6 +15,8 @@ enum CameraError: Error {
     case deniedAuthorization
     case restrictedAuthorization
     case unknownAuthorization
+    case invalidDeviceInput
+    case invalidScannedValue
 }
 
 extension CameraError: LocalizedError {
@@ -34,6 +36,10 @@ extension CameraError: LocalizedError {
             return "Attempting to access a restricted capture device"
         case .unknownAuthorization:
             return "Unknown authorization status for capture device"
+        case .invalidDeviceInput:
+            return "Something is wrong with the camera."
+        case .invalidScannedValue:
+            return "The value scanned is not valid."
         }
     }
 }
