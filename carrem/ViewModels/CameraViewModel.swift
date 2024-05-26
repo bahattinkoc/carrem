@@ -73,7 +73,10 @@ extension CameraViewModel: AVCapturePhotoCaptureDelegate {
         }
         stopRunning()
         capturedImage = image
-        showPhotoDetailView = true
-        // OCR işlemini burada gerçekleştirebilirsiniz ve wordList'i güncelleyebilirsiniz.
+        OCRHelper.shared.detectOCR(image: image) { [weak self] ocrList in
+            guard let self else { return }
+            wordList = ocrList
+            showPhotoDetailView = true
+        }
     }
 }

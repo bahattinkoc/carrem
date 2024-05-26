@@ -36,7 +36,7 @@ struct ContentView: View {
                 }
             }
             .navigationDestination(isPresented: $viewModel.showPhotoDetailView) {
-                PhotoDetailView(capturedImage: viewModel.capturedImage)
+                OCRListView(wordList: viewModel.wordList ?? [])
             }
             .onAppear() {
                 viewModel.startRunning()
@@ -48,22 +48,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-struct PhotoDetailView: View {
-    let capturedImage: UIImage?
-
-    var body: some View {
-        VStack {
-            if let capturedImage {
-                Image(uiImage: capturedImage)
-                    .resizable()
-                    .scaledToFit()
-            } else {
-                Text("No Photo")
-            }
-        }
-        .navigationBarTitle("Photo Detail", displayMode: .inline)
     }
 }
