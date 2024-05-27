@@ -18,8 +18,40 @@
 		6BAA34942C038C2D00BC8B5B /* OCRHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34932C038C2D00BC8B5B /* OCRHelper.swift */; };
 		6BAA34962C038C7A00BC8B5B /* OCRListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34952C038C7A00BC8B5B /* OCRListView.swift */; };
 		6BAA34982C038C9000BC8B5B /* VerifyOCRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34972C038C9000BC8B5B /* VerifyOCRView.swift */; };
+		6BAA34C42C05218A00BC8B5B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BAA34C32C05218A00BC8B5B /* WidgetKit.framework */; };
+		6BAA34C62C05218A00BC8B5B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BAA34C52C05218A00BC8B5B /* SwiftUI.framework */; };
+		6BAA34C92C05218A00BC8B5B /* CarParkReminderBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34C82C05218A00BC8B5B /* CarParkReminderBundle.swift */; };
+		6BAA34CB2C05218A00BC8B5B /* CarParkReminderLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34CA2C05218A00BC8B5B /* CarParkReminderLiveActivity.swift */; };
+		6BAA34CD2C05218A00BC8B5B /* CarParkReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34CC2C05218A00BC8B5B /* CarParkReminder.swift */; };
+		6BAA34CF2C05218A00BC8B5B /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34CE2C05218A00BC8B5B /* AppIntent.swift */; };
+		6BAA34D12C05218C00BC8B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAA34D02C05218C00BC8B5B /* Assets.xcassets */; };
+		6BAA34D52C05218C00BC8B5B /* CarParkReminderExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6BAA34C12C05218A00BC8B5B /* CarParkReminderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6BC3AF7F2BFC164800C6561C /* CameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3AF7E2BFC164800C6561C /* CameraButton.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BAA34D32C05218C00BC8B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B3E81ED2BFC043F0002C970 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BAA34C02C05218A00BC8B5B;
+			remoteInfo = CarParkReminderExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6BAA34D62C05218C00BC8B5B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6BAA34D52C05218C00BC8B5B /* CarParkReminderExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6B11881A2BFD43E400ECB225 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
@@ -34,6 +66,17 @@
 		6BAA34932C038C2D00BC8B5B /* OCRHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRHelper.swift; sourceTree = "<group>"; };
 		6BAA34952C038C7A00BC8B5B /* OCRListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRListView.swift; sourceTree = "<group>"; };
 		6BAA34972C038C9000BC8B5B /* VerifyOCRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOCRView.swift; sourceTree = "<group>"; };
+		6BAA34C12C05218A00BC8B5B /* CarParkReminderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CarParkReminderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAA34C32C05218A00BC8B5B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6BAA34C52C05218A00BC8B5B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6BAA34C82C05218A00BC8B5B /* CarParkReminderBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkReminderBundle.swift; sourceTree = "<group>"; };
+		6BAA34CA2C05218A00BC8B5B /* CarParkReminderLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkReminderLiveActivity.swift; sourceTree = "<group>"; };
+		6BAA34CC2C05218A00BC8B5B /* CarParkReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParkReminder.swift; sourceTree = "<group>"; };
+		6BAA34CE2C05218A00BC8B5B /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		6BAA34D02C05218C00BC8B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BAA34D22C05218C00BC8B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BAA34DA2C0521DF00BC8B5B /* carrem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = carrem.entitlements; sourceTree = "<group>"; };
+		6BAA34DB2C0521EA00BC8B5B /* CarParkReminderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarParkReminderExtension.entitlements; sourceTree = "<group>"; };
 		6BC3AF7E2BFC164800C6561C /* CameraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,13 +88,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BAA34BE2C05218A00BC8B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAA34C62C05218A00BC8B5B /* SwiftUI.framework in Frameworks */,
+				6BAA34C42C05218A00BC8B5B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		6B3E81EC2BFC043F0002C970 = {
 			isa = PBXGroup;
 			children = (
+				6BAA34DB2C0521EA00BC8B5B /* CarParkReminderExtension.entitlements */,
 				6B3E81F72BFC043F0002C970 /* carrem */,
+				6BAA34C72C05218A00BC8B5B /* CarParkReminder */,
+				6BAA34C22C05218A00BC8B5B /* Frameworks */,
 				6B3E81F62BFC043F0002C970 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				6B3E81F52BFC043F0002C970 /* carrem.app */,
+				6BAA34C12C05218A00BC8B5B /* CarParkReminderExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +123,7 @@
 		6B3E81F72BFC043F0002C970 /* carrem */ = {
 			isa = PBXGroup;
 			children = (
+				6BAA34DA2C0521DF00BC8B5B /* carrem.entitlements */,
 				6B3E81FE2BFC04410002C970 /* Assets.xcassets */,
 				6B3E82082BFC06AD0002C970 /* Camera */,
 				6B3E81F82BFC043F0002C970 /* carremApp.swift */,
@@ -123,6 +180,28 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		6BAA34C22C05218A00BC8B5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA34C32C05218A00BC8B5B /* WidgetKit.framework */,
+				6BAA34C52C05218A00BC8B5B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BAA34C72C05218A00BC8B5B /* CarParkReminder */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA34C82C05218A00BC8B5B /* CarParkReminderBundle.swift */,
+				6BAA34CA2C05218A00BC8B5B /* CarParkReminderLiveActivity.swift */,
+				6BAA34CC2C05218A00BC8B5B /* CarParkReminder.swift */,
+				6BAA34CE2C05218A00BC8B5B /* AppIntent.swift */,
+				6BAA34D02C05218C00BC8B5B /* Assets.xcassets */,
+				6BAA34D22C05218C00BC8B5B /* Info.plist */,
+			);
+			path = CarParkReminder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,15 +212,34 @@
 				6B3E81F12BFC043F0002C970 /* Sources */,
 				6B3E81F22BFC043F0002C970 /* Frameworks */,
 				6B3E81F32BFC043F0002C970 /* Resources */,
+				6BAA34D62C05218C00BC8B5B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6BAA34D42C05218C00BC8B5B /* PBXTargetDependency */,
 			);
 			name = carrem;
 			productName = carrem;
 			productReference = 6B3E81F52BFC043F0002C970 /* carrem.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6BAA34C02C05218A00BC8B5B /* CarParkReminderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BAA34D92C05218C00BC8B5B /* Build configuration list for PBXNativeTarget "CarParkReminderExtension" */;
+			buildPhases = (
+				6BAA34BD2C05218A00BC8B5B /* Sources */,
+				6BAA34BE2C05218A00BC8B5B /* Frameworks */,
+				6BAA34BF2C05218A00BC8B5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarParkReminderExtension;
+			productName = CarParkReminderExtension;
+			productReference = 6BAA34C12C05218A00BC8B5B /* CarParkReminderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -154,6 +252,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					6B3E81F42BFC043F0002C970 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					6BAA34C02C05218A00BC8B5B = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -172,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				6B3E81F42BFC043F0002C970 /* carrem */,
+				6BAA34C02C05218A00BC8B5B /* CarParkReminderExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +285,14 @@
 			files = (
 				6B3E82022BFC04410002C970 /* Preview Assets.xcassets in Resources */,
 				6B3E81FF2BFC04410002C970 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BAA34BF2C05218A00BC8B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAA34D12C05218C00BC8B5B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +316,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BAA34BD2C05218A00BC8B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAA34CD2C05218A00BC8B5B /* CarParkReminder.swift in Sources */,
+				6BAA34CF2C05218A00BC8B5B /* AppIntent.swift in Sources */,
+				6BAA34C92C05218A00BC8B5B /* CarParkReminderBundle.swift in Sources */,
+				6BAA34CB2C05218A00BC8B5B /* CarParkReminderLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BAA34D42C05218C00BC8B5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BAA34C02C05218A00BC8B5B /* CarParkReminderExtension */;
+			targetProxy = 6BAA34D32C05218C00BC8B5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6B3E82032BFC04410002C970 /* Debug */ = {
@@ -331,15 +460,18 @@
 		6B3E82062BFC04410002C970 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = carrem/carrem.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"carrem/Preview Content\"";
 				DEVELOPMENT_TEAM = 64RW322232;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need a camera to take a picture of the car park.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -361,15 +493,18 @@
 		6B3E82072BFC04410002C970 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = carrem/carrem.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"carrem/Preview Content\"";
 				DEVELOPMENT_TEAM = 64RW322232;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need a camera to take a picture of the car park.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -382,6 +517,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bkoc.carrem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6BAA34D72C05218C00BC8B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CarParkReminderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64RW322232;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarParkReminder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CarParkReminder;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkoc.carrem.CarParkReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BAA34D82C05218C00BC8B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CarParkReminderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64RW322232;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarParkReminder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CarParkReminder;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkoc.carrem.CarParkReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,6 +596,15 @@
 			buildConfigurations = (
 				6B3E82062BFC04410002C970 /* Debug */,
 				6B3E82072BFC04410002C970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BAA34D92C05218C00BC8B5B /* Build configuration list for PBXNativeTarget "CarParkReminderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BAA34D72C05218C00BC8B5B /* Debug */,
+				6BAA34D82C05218C00BC8B5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

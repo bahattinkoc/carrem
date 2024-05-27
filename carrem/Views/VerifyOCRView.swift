@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct VerifyOCRView: View {
+    @AppStorage("activeParkAreaCode", store: UserDefaults(suiteName: "group.carrem"))
+    var parkAreaCode: String = ""
+
     @State private var text: String = ""
 
     init(ocrText: String) {
@@ -26,7 +30,8 @@ struct VerifyOCRView: View {
             Spacer()
 
             Button(action: {
-                print("Butona tıklandı")
+                self.parkAreaCode = text
+                WidgetCenter.shared.reloadAllTimelines()
             }) {
                 Text("Onayla")
                     .font(.headline)
