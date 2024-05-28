@@ -45,6 +45,9 @@ class CameraViewModel: NSObject, ObservableObject {
     func takePhoto() {
         let settings = AVCapturePhotoSettings()
         photoOutput.capturePhoto(with: settings, delegate: self)
+        DispatchQueue.main.async {
+            self.stopRunning()
+        }
     }
 
     // MARK: - PRIVATE FUNCTIONS
@@ -71,7 +74,6 @@ extension CameraViewModel: AVCapturePhotoCaptureDelegate {
         guard let data = photo.fileDataRepresentation(), let image = UIImage(data: data) else {
             return
         }
-        stopRunning()
         capturedImage = image
         OCRHelper.shared.detectOCR(image: image) { [weak self] ocrList in
             guard let self else { return }
