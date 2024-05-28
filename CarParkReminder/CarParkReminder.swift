@@ -40,12 +40,19 @@ struct CarParkReminderEntryView : View {
         switch widgetFamily {
         case .accessoryCircular:
             VStack {
-                Image(systemName: "car.fill")
-                    .padding(.bottom, 2.0)
-                    .font(.system(size: 16.0, weight: .black))
-                Text(entry.parkAreaCode)
-                    .fontWeight(.heavy)
-                    .fixedSize()
+                if entry.parkAreaCode.isEmpty {
+                    Text("NO\nPARK")
+                        .bold()
+                        .multilineTextAlignment(.center)
+                } else {
+                    Image(systemName: "car.fill")
+                        .padding(.bottom, 2.0)
+                        .font(.system(size: 16.0, weight: .black))
+                    Text(entry.parkAreaCode)
+                        .fontWeight(.heavy)
+                        .fixedSize()
+                        .multilineTextAlignment(.center)
+                }
             }
         default:
             Text("Not implemented")
