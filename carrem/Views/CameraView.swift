@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CameraView: View {
     @StateObject private var viewModel = CameraViewModel()
 
     var body: some View {
@@ -35,7 +35,7 @@ struct ContentView: View {
                     ErrorView(error: .none)
                 }
             }
-            .navigationDestination(isPresented: $viewModel.showPhotoDetailView) {
+            .navigationDestination(isPresented: $viewModel.showOCRListView) {
                 OCRListView(wordList: viewModel.wordList ?? [])
             }
             .onAppear() {
@@ -47,6 +47,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CameraView()
     }
 }

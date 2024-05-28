@@ -11,7 +11,7 @@ import AVFoundation
 class CameraViewModel: NSObject, ObservableObject {
     @Published var capturedImage: UIImage?
     @Published var wordList: [String]?
-    @Published var showPhotoDetailView = false
+    @Published var showOCRListView = false
 
     private var captureSession: AVCaptureSession!
     private var photoOutput: AVCapturePhotoOutput!
@@ -76,7 +76,7 @@ extension CameraViewModel: AVCapturePhotoCaptureDelegate {
         OCRHelper.shared.detectOCR(image: image) { [weak self] ocrList in
             guard let self else { return }
             wordList = ocrList
-            showPhotoDetailView = true
+            showOCRListView = true
         }
     }
 }
