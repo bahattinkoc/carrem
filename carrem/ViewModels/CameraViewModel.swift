@@ -9,6 +9,9 @@ import SwiftUI
 import AVFoundation
 
 class CameraViewModel: NSObject, ObservableObject {
+    @AppStorage("activeParkPhoto", store: UserDefaults(suiteName: "group.carrem"))
+    var capturedData: Data?
+
     @Published var capturedImage: UIImage?
     @Published var wordList: [String]?
     @Published var showOCRListView = false
@@ -75,6 +78,7 @@ extension CameraViewModel: AVCapturePhotoCaptureDelegate {
             return
         }
         capturedImage = image
+        capturedData = data
         OCRHelper.shared.detectOCR(image: image) { [weak self] ocrList in
             guard let self else { return }
             wordList = ocrList

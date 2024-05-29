@@ -7,14 +7,20 @@
 
 import SwiftUI
 import WidgetKit
+import CoreLocation
 
 struct VerifyOCRView: View {
     @AppStorage("activeParkAreaCode", store: UserDefaults(suiteName: "group.carrem"))
     var parkAreaCode: String = ""
+    @AppStorage("activeParkPhoto", store: UserDefaults(suiteName: "group.carrem"))
+    var capturedData: Data?
+
+    @Environment(\.modelContext) var modelContext
+
+    @ObservedObject var locationManager = LocationManager()
 
     @State private var text: String = ""
     @State private var shouldNavigate: Bool = false
-
 
     init(ocrText: String) {
         _text = State(initialValue: ocrText)
@@ -31,7 +37,7 @@ struct VerifyOCRView: View {
             TextEditor(text: $text)
                 .bold()
                 .font(.system(size: 80.0))
-                .frame(minHeight: 100.0)
+                .frame(minHeight: 200.0)
                 .fixedSize(horizontal: false, vertical: true)
                 .multilineTextAlignment(.center)
                 .toolbar {
@@ -51,8 +57,8 @@ struct VerifyOCRView: View {
             Button(action: {
                 parkAreaCode = text
                 WidgetCenter.shared.reloadAllTimelines()
+                addPark()
                 shouldNavigate = true
-                // TODO: - son kayıt noktasını kaydet state'i aktif yap.
             }) {
                 Text("Onayla")
                     .font(.headline)
@@ -67,6 +73,20 @@ struct VerifyOCRView: View {
                 StopView().navigationBarBackButtonHidden()
             }
         }
+    }
+
+    func addPark() {
+        modelContext.insert(
+            ParkModel(
+                code: parkAreaCode,
+                latitude: locationManager.location?.coordinate.latitude,
+                longitude: locationManager.location?.coordinate.longitude,
+                image: capturedData,
+                date: Date().formattedDate(),
+                time: Date().formattedTime(),
+                isParking: true
+            )
+        )
     }
 }
 

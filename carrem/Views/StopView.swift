@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct StopView: View {
+    @AppStorage("activeParkAreaCode", store: UserDefaults(suiteName: "group.carrem"))
+    var parkAreaCode: String = ""
+
     @State private var hidePast = true
 
     var body: some View {
@@ -15,6 +19,8 @@ struct StopView: View {
             Spacer()
             Button(action: {
                 // TODO: - son kayıt noktasını kaydet ve aktif kayıdı sil.
+                parkAreaCode = ""
+                WidgetCenter.shared.reloadAllTimelines()
             }) {
                 Text("STOP")
                     .font(.largeTitle)

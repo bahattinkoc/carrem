@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct AppMain: App {
+    @AppStorage("activeParkAreaCode", store: UserDefaults(suiteName: "group.carrem"))
+    var parkAreaCode: String = ""
+
     var body: some Scene {
         WindowGroup {
-            CameraView()
+            if parkAreaCode.isEmpty {
+                CameraView()
+            } else {
+                StopView()
+            }
         }
+        .modelContainer(for: ParkModel.self)
     }
 }
