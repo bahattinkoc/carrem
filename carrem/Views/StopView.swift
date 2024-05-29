@@ -12,8 +12,6 @@ struct StopView: View {
     @AppStorage("activeParkAreaCode", store: UserDefaults(suiteName: "group.carrem"))
     var parkAreaCode: String = ""
 
-    @State private var hidePast = true
-
     var body: some View {
         VStack {
             Spacer()

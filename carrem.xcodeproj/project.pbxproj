@@ -17,6 +17,7 @@
 		6B3E821B2BFC07770002C970 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3E821A2BFC07770002C970 /* ErrorView.swift */; };
 		6B9280112C07E70C00366E42 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9280102C07E70C00366E42 /* LocationManager.swift */; };
 		6B9280142C07E8C800366E42 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9280132C07E8C800366E42 /* Date+Extension.swift */; };
+		6B9280162C07EB2100366E42 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9280152C07EB2100366E42 /* MainView.swift */; };
 		6BAA34942C038C2D00BC8B5B /* OCRHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34932C038C2D00BC8B5B /* OCRHelper.swift */; };
 		6BAA34962C038C7A00BC8B5B /* OCRListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34952C038C7A00BC8B5B /* OCRListView.swift */; };
 		6BAA34982C038C9000BC8B5B /* VerifyOCRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34972C038C9000BC8B5B /* VerifyOCRView.swift */; };
@@ -69,6 +70,7 @@
 		6B3E821A2BFC07770002C970 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		6B9280102C07E70C00366E42 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		6B9280132C07E8C800366E42 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		6B9280152C07EB2100366E42 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6BAA34932C038C2D00BC8B5B /* OCRHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRHelper.swift; sourceTree = "<group>"; };
 		6BAA34952C038C7A00BC8B5B /* OCRListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRListView.swift; sourceTree = "<group>"; };
 		6BAA34972C038C9000BC8B5B /* VerifyOCRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOCRView.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				6B11881A2BFD43E400ECB225 /* ScannerView.swift */,
 				6BAA34DF2C05497A00BC8B5B /* StopView.swift */,
 				6BAA34972C038C9000BC8B5B /* VerifyOCRView.swift */,
+				6B9280152C07EB2100366E42 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				6BAA34942C038C2D00BC8B5B /* OCRHelper.swift in Sources */,
 				6B9280142C07E8C800366E42 /* Date+Extension.swift in Sources */,
 				6B3E820A2BFC06C10002C970 /* CameraError.swift in Sources */,
+				6B9280162C07EB2100366E42 /* MainView.swift in Sources */,
 				6B9280112C07E70C00366E42 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

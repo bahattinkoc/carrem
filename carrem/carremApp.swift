@@ -16,7 +16,7 @@ struct AppMain: App {
     var body: some Scene {
         WindowGroup {
             if parkAreaCode.isEmpty {
-                CameraView()
+                MainView()
             } else {
                 StopView()
             }
