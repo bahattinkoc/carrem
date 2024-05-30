@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct MainView: View {
+    @Query private var parkHistoryList: [ParkModel]
     @State private var showCameraView: Bool = false
     @State private var showParkHistoryView: Bool = false
 
@@ -29,15 +31,17 @@ struct MainView: View {
                             .cornerRadius(100)
                             .shadow(radius: 10)
                     }
-                    Button(action: {
-                        showParkHistoryView = true
-                    }) {
-                        Image(systemName: "clock.arrow.circlepath")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 40, height: 40)
-                            .tint(.gray)
-                            .padding()
+                    if !parkHistoryList.isEmpty {
+                        Button(action: {
+                            showParkHistoryView = true
+                        }) {
+                            Image(systemName: "clock.arrow.circlepath")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 40, height: 40)
+                                .tint(.gray)
+                                .padding()
+                        }
                     }
                     Spacer()
                 }
