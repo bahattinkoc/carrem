@@ -10,6 +10,7 @@ import MapKit
 
 struct ParkHistoryCell: View {
     var park: ParkModel?
+    @State private var isFullScreen = false
 
     var body: some View {
         HStack {
@@ -19,6 +20,11 @@ struct ParkHistoryCell: View {
                 .frame(width: 50, height: 50)
                 .cornerRadius(8)
                 .clipped()
+                .onTapGesture {
+                    withAnimation {
+                        isFullScreen = true
+                    }
+                }
 
             VStack(alignment: .leading) {
                 Text(park?.code ?? "")
@@ -42,6 +48,9 @@ struct ParkHistoryCell: View {
                 }
         }
         .padding(.vertical, 5)
+        .fullScreenCover(isPresented: $isFullScreen) {
+            FullScreenPhotoView(fullScreenImageData: (park?.image!)!)
+        }
     }
 
     func openMapsWithCoordinates(latitude: Double, longitude: Double) {

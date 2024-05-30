@@ -20,6 +20,7 @@
 		6B9280162C07EB2100366E42 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9280152C07EB2100366E42 /* MainView.swift */; };
 		6B9280182C07F4C900366E42 /* ParkHistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9280172C07F4C900366E42 /* ParkHistoryListView.swift */; };
 		6B92801A2C07FA2800366E42 /* ParkHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9280192C07FA2800366E42 /* ParkHistoryCell.swift */; };
+		6B92801C2C080CCB00366E42 /* FullScreenPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B92801B2C080CCB00366E42 /* FullScreenPhotoView.swift */; };
 		6BAA34942C038C2D00BC8B5B /* OCRHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34932C038C2D00BC8B5B /* OCRHelper.swift */; };
 		6BAA34962C038C7A00BC8B5B /* OCRListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34952C038C7A00BC8B5B /* OCRListView.swift */; };
 		6BAA34982C038C9000BC8B5B /* VerifyOCRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA34972C038C9000BC8B5B /* VerifyOCRView.swift */; };
@@ -75,6 +76,7 @@
 		6B9280152C07EB2100366E42 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6B9280172C07F4C900366E42 /* ParkHistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHistoryListView.swift; sourceTree = "<group>"; };
 		6B9280192C07FA2800366E42 /* ParkHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHistoryCell.swift; sourceTree = "<group>"; };
+		6B92801B2C080CCB00366E42 /* FullScreenPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPhotoView.swift; sourceTree = "<group>"; };
 		6BAA34932C038C2D00BC8B5B /* OCRHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRHelper.swift; sourceTree = "<group>"; };
 		6BAA34952C038C7A00BC8B5B /* OCRListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRListView.swift; sourceTree = "<group>"; };
 		6BAA34972C038C9000BC8B5B /* VerifyOCRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOCRView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				6BC3AF7E2BFC164800C6561C /* CameraButton.swift */,
 				6B3E82162BFC074E0002C970 /* CameraView.swift */,
 				6B3E821A2BFC07770002C970 /* ErrorView.swift */,
+				6B92801B2C080CCB00366E42 /* FullScreenPhotoView.swift */,
 				6B9280152C07EB2100366E42 /* MainView.swift */,
 				6BAA34952C038C7A00BC8B5B /* OCRListView.swift */,
 				6B9280192C07FA2800366E42 /* ParkHistoryCell.swift */,
@@ -344,6 +347,7 @@
 				6BAA34E52C055D7000BC8B5B /* ParkModel.swift in Sources */,
 				6BAA34962C038C7A00BC8B5B /* OCRListView.swift in Sources */,
 				6B3E82172BFC074E0002C970 /* CameraView.swift in Sources */,
+				6B92801C2C080CCB00366E42 /* FullScreenPhotoView.swift in Sources */,
 				6B3E81F92BFC043F0002C970 /* carremApp.swift in Sources */,
 				6BAA34E02C05497A00BC8B5B /* StopView.swift in Sources */,
 				6B92801A2C07FA2800366E42 /* ParkHistoryCell.swift in Sources */,
