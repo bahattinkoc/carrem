@@ -16,11 +16,10 @@ struct StopView: View {
         VStack {
             Spacer()
             Button(action: {
-                // TODO: - son kayıt noktasını kaydet ve aktif kayıdı sil.
                 parkAreaCode = ""
                 WidgetCenter.shared.reloadAllTimelines()
             }) {
-                Text("STOP")
+                Text(LocalizationContants.StopView.stop)
                     .font(.largeTitle)
                     .foregroundColor(.white)
                     .frame(width: 200, height: 200)

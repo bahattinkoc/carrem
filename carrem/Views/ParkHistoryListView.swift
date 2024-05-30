@@ -18,7 +18,7 @@ struct ParkHistoryListView: View {
                     ParkHistoryCell(park: park)
                 }
             }
-            .navigationTitle("Park History")
+            .navigationTitle(LocalizationContants.ParkHistoryListView.parkHistory)
         }
     }
 }

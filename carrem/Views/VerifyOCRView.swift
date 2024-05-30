@@ -40,7 +40,7 @@ struct VerifyOCRView: View {
                     ToolbarItem(placement: .keyboard) {
                         HStack {
                             Spacer()
-                            Button("Done") {
+                            Button(LocalizationContants.VerifyOCRView.done) {
                                 UIApplication.shared.endEditing()
                             }
                         }
@@ -56,7 +56,7 @@ struct VerifyOCRView: View {
                 addPark()
                 shouldNavigate = true
             }) {
-                Text("Onayla")
+                Text(LocalizationContants.VerifyOCRView.save)
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()
@@ -68,7 +68,7 @@ struct VerifyOCRView: View {
             .navigationDestination(isPresented: $shouldNavigate) {
                 StopView().navigationBarBackButtonHidden()
             }
-            .navigationTitle("Verify Park Area Code")
+            .navigationTitle(LocalizationContants.VerifyOCRView.verifyParkAreaCode)
         }
     }
 

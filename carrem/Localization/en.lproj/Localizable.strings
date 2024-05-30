@@ -1,0 +1,23 @@
+// MARK: - CameraView
+
+"captureParkPhoto" = "Take a photo of your parking space...";
+
+// MARK: - OCRListView
+
+"addParkArea" = "Add park area";
+"detectedAreaCodes" = "Detected Area Codes";
+
+// MARK: - ParkHistoryListView
+
+"parkHistory" = "Park History";
+
+// MARK: - StopView
+
+"stop" = "STOP";
+
+// MARK: - VerifyOCRView
+
+"done" = "Done";
+"save" = "Save";
+"verifyParkAreaCode" = "Verify Park Area Code";
+

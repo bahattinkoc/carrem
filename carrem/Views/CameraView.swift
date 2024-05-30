@@ -15,7 +15,7 @@ struct CameraView: View {
             GeometryReader { geometry in
                 ZStack {
                     VStack {
-                        Text("Take a photo of your parking space...")
+                        Text(LocalizationContants.CameraView.captureParkPhoto)
                             .bold()
                             .font(.title2)
                             .padding()

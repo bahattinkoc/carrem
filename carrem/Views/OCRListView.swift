@@ -12,13 +12,13 @@ struct OCRListView: View {
 
     var body: some View {
         NavigationView {
-            List(wordList.isEmpty ? ["Add park area"] : wordList, id: \.self) { item in
+            List(wordList.isEmpty ? [LocalizationContants.OCRListView.addParkArea] : wordList, id: \.self) { item in
                 NavigationLink(destination: VerifyOCRView(ocrText: item)) {
                     Text(item)
                 }
             }
         }
-        .navigationTitle("Detected Area Codes")
+        .navigationTitle(LocalizationContants.OCRListView.detectedAreaCodes)
     }
 }
 

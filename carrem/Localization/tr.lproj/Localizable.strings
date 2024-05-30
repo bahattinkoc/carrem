@@ -1,0 +1,23 @@
+// MARK: - CameraView
+
+"captureParkPhoto" = "Park yerinizin fotoğrafını çekin...";
+
+// MARK: - OCRListView
+
+"addParkArea" = "Park alanı ekleyin";
+"detectedAreaCodes" = "Tespit Edilen Alan Kodları";
+
+// MARK: - ParkHistoryListView
+
+"parkHistory" = "Park Geçmişi";
+
+// MARK: - StopView
+
+"stop" = "DUR";
+
+// MARK: - VerifyOCRView
+
+"done" = "Tamam";
+"save" = "Kaydet";
+"verifyParkAreaCode" = "Park Alan Kodunu Doğrula";
+
