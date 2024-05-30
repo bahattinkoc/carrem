@@ -2,6 +2,11 @@
 
 "captureParkPhoto" = "Park yerinizin fotoğrafını çekin...";
 
+// MARK: - MainView
+
+"privacyPolicy" = "Gizlilik Politikası";
+"termsOfConditions" = "Şartlar ve Koşullar";
+
 // MARK: - OCRListView
 
 "addParkArea" = "Park alanı ekleyin";
@@ -21,3 +26,8 @@
 "save" = "Kaydet";
 "verifyParkAreaCode" = "Park Alan Kodunu Doğrula";
 
+// MARK: - CarParkReminder
+
+"noPark" = "PARK\nYOK";
+"carParkReminder" = "Otopark Hatırlatma";
+"carParkReminderDescription" = "Otopark alan kodunuz için bir hatırlatma widget'ıdır.";

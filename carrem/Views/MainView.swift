@@ -7,11 +7,14 @@
 
 import SwiftUI
 import SwiftData
+import WebKit
 
 struct MainView: View {
     @Query private var parkHistoryList: [ParkModel]
-    @State private var showCameraView: Bool = false
-    @State private var showParkHistoryView: Bool = false
+    @State private var showCameraView = false
+    @State private var showParkHistoryView = false
+    @State private var isShowingPrivacyPolicy = false
+    @State private var isShowingTermsOfConditions = false
 
     var body: some View {
         NavigationStack {
@@ -44,6 +47,31 @@ struct MainView: View {
                         }
                     }
                     Spacer()
+                    HStack {
+                        Button(action: {
+                            isShowingPrivacyPolicy = true
+                        }) {
+                            Text(LocalizationContants.MainView.privacyPolicy)
+                                .foregroundStyle(.gray)
+                                .font(.footnote)
+                        }
+                        .sheet(isPresented: $isShowingPrivacyPolicy) {
+                            WebViewContainer(urlString: "https://sites.google.com/view/carrem/privacy-policy")
+                        }
+                        Text("•")
+                            .foregroundStyle(.gray)
+                            .font(.footnote)
+                        Button(action: {
+                            isShowingTermsOfConditions = true
+                        }) {
+                            Text(LocalizationContants.MainView.termsOfConditions)
+                                .foregroundStyle(.gray)
+                                .font(.footnote)
+                        }
+                        .sheet(isPresented: $isShowingTermsOfConditions) {
+                            WebViewContainer(urlString: "https://sites.google.com/view/carrem/terms-of-conditions")
+                        }
+                    }
                 }
             }
             .navigationDestination(isPresented: $showCameraView) {
@@ -58,4 +86,19 @@ struct MainView: View {
 
 #Preview {
     MainView()
+}
+
+struct WebViewContainer: UIViewRepresentable {
+    let urlString: String
+
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
+    }
+
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        if let url = URL(string: urlString) {
+            let request = URLRequest(url: url)
+            uiView.load(request)
+        }
+    }
 }

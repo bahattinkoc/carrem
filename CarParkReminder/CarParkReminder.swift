@@ -41,7 +41,7 @@ struct CarParkReminderEntryView : View {
         case .accessoryCircular:
             VStack {
                 if entry.parkAreaCode.isEmpty {
-                    Text("NO\nPARK")
+                    Text(LocalizationContants.CarParkReminder.noPark)
                         .bold()
                         .multilineTextAlignment(.center)
                 } else {
@@ -69,8 +69,8 @@ struct CarParkReminder: Widget {
             CarParkReminderEntryView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .configurationDisplayName("Car Park Reminder")
-        .description("This is a reminder widget for your car park area code.")
+        .configurationDisplayName(LocalizationContants.CarParkReminder.carParkReminder)
+        .description(LocalizationContants.CarParkReminder.carParkReminderDescription)
         .supportedFamilies([.accessoryCircular])
     }
 }

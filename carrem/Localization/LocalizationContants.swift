@@ -11,6 +11,11 @@ enum LocalizationContants {
         static var captureParkPhoto: String { "captureParkPhoto".localized }
     }
 
+    enum MainView {
+        static var privacyPolicy: String { "privacyPolicy".localized }
+        static var termsOfConditions: String { "termsOfConditions".localized }
+    }
+
     enum OCRListView {
         static var addParkArea: String { "addParkArea".localized }
         static var detectedAreaCodes: String { "detectedAreaCodes".localized }
@@ -28,5 +33,11 @@ enum LocalizationContants {
         static var done: String { "done".localized }
         static var save: String { "save".localized }
         static var verifyParkAreaCode: String { "verifyParkAreaCode".localized }
+    }    
+
+    enum CarParkReminder {
+        static var noPark: String { "noPark".localized }
+        static var carParkReminder: String { "carParkReminder".localized }
+        static var carParkReminderDescription: String { "carParkReminderDescription".localized }
     }
 }

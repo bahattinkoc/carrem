@@ -2,6 +2,11 @@
 
 "captureParkPhoto" = "Take a photo of your parking space...";
 
+// MARK: - MainView
+
+"privacyPolicy" = "Privacy Policy";
+"termsOfConditions" = "Terms Of Conditions";
+
 // MARK: - OCRListView
 
 "addParkArea" = "Add park area";
@@ -20,4 +25,10 @@
 "done" = "Done";
 "save" = "Save";
 "verifyParkAreaCode" = "Verify Park Area Code";
+
+// MARK: - CarParkReminder
+
+"noPark" = "NO\nPARK";
+"carParkReminder" = "Car Park Reminder";
+"carParkReminderDescription" = "This is a reminder widget for your car park area code.";
 
