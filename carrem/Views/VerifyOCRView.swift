@@ -28,10 +28,6 @@ struct VerifyOCRView: View {
 
     var body: some View {
         VStack(alignment: .center) {
-            Text("Verift Park Area Code")
-                .bold()
-                .padding()
-
             Spacer()
 
             TextEditor(text: $text)
@@ -72,6 +68,7 @@ struct VerifyOCRView: View {
             .navigationDestination(isPresented: $shouldNavigate) {
                 StopView().navigationBarBackButtonHidden()
             }
+            .navigationTitle("Verify Park Area Code")
         }
     }
 
