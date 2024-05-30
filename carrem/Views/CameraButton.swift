@@ -14,7 +14,7 @@ struct CameraButton: View {
     var body: some View {
         ZStack {
             Circle()
-                .stroke(Color.white, lineWidth: 4)
+                .stroke(Color.primary, lineWidth: 4)
                 .frame(width: 80, height: 80)
 
             Button(action: {
@@ -23,7 +23,7 @@ struct CameraButton: View {
             }) {
                 ZStack {
                     Circle()
-                        .fill(Color.white)
+                        .fill(Color.primary)
                         .frame(width: 68, height: 68)
                         .scaleEffect(isPressed ? 0.9 : 1.0)
                 }
