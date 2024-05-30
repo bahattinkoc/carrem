@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showCameraView: Bool = false
+    @State private var showParkHistoryView: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -17,7 +18,7 @@ struct MainView: View {
                     HStack {
                         Spacer()
                         Button(action: {
-
+                            showParkHistoryView = true
                         }) {
                             Image(systemName: "clock.arrow.circlepath")
                                 .resizable()
@@ -50,6 +51,9 @@ struct MainView: View {
             }
             .navigationDestination(isPresented: $showCameraView) {
                 CameraView().navigationBarBackButtonHidden()
+            }
+            .navigationDestination(isPresented: $showParkHistoryView) {
+                ParkHistoryListView()
             }
         }
     }
