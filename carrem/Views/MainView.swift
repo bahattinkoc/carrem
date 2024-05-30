@@ -15,28 +15,11 @@ struct MainView: View {
         NavigationStack {
             ZStack {
                 VStack {
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            showParkHistoryView = true
-                        }) {
-                            Image(systemName: "clock.arrow.circlepath")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 50, height: 50)
-                                .tint(.gray)
-                                .padding()
-                        }
-                    }
-                    Spacer()
-                }
-                VStack {
                     Spacer()
                     Button(action: {
                         showCameraView = true
                     }) {
                         Image(systemName: "car.fill")
-//                            .font(.largeTitle)
                             .resizable()
                             .padding(EdgeInsets(top: 70, leading: 70, bottom: 70, trailing: 70))
                             .aspectRatio(contentMode: .fit)
@@ -45,6 +28,16 @@ struct MainView: View {
                             .background(Color.green)
                             .cornerRadius(100)
                             .shadow(radius: 10)
+                    }
+                    Button(action: {
+                        showParkHistoryView = true
+                    }) {
+                        Image(systemName: "clock.arrow.circlepath")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 40, height: 40)
+                            .tint(.gray)
+                            .padding()
                     }
                     Spacer()
                 }
