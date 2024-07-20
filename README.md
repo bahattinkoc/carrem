@@ -18,7 +18,7 @@ Parking lot area code reminder. Screenlock Widget.
   <img src="https://github.com/bahattinkoc/carrem/blob/main/Assets/icon/ss/11ProEN/Apple%20iPhone%2011%20Pro%20Max%20Screenshot%203.png" alt="Screenshot 3" width="200">
 </div>
 
-## Contributing to DropColour
+## Contributing to carrem
 
 We :heart: your feedback! If you notice any bug or want a new feature, just [open an Issue](https://github.com/elpassion/DropColour-iOS/issues/new)!
 
