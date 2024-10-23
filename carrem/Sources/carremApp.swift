@@ -13,6 +13,9 @@ struct AppMain: App {
     @AppStorage("activeParkAreaCode", store: UserDefaults(suiteName: "group.carrem"))
     var parkAreaCode: String = ""
 
+    init() {
+    }
+
     var body: some Scene {
         WindowGroup {
             if parkAreaCode.isEmpty {
