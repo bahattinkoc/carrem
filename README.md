@@ -20,7 +20,7 @@ Parking lot area code reminder. Screenlock Widget.
 
 ## Contributing to carrem
 
-We :heart: your feedback! If you notice any bug or want a new feature, just [open an Issue](https://github.com/elpassion/DropColour-iOS/issues/new)!
+We :heart: your feedback! If you notice any bug or want a new feature, just [open an Issue](https://github.com/bahattinkoc/carrem/issues/new)!
 
 We also encourage you to make changes to the code - refactor it, add a feature, fix a typo. Even the smallest change counts!
 
